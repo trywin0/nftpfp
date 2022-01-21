@@ -37,7 +37,7 @@ imageInput.onchange = (e)=>{
             const x = (i / 4) % 500;
             const y = Math.floor((i / 4) / 500);
            // if(i%4===0) console.log(canvasData[i+3]) 
-            if(canvasData[i+3]>100){
+            if(canvasData[i+2]>10){
                 ctx.fillStyle=`rgb(${imgData.slice(i,i+3)})`
                 ctx.fillRect(x,y,1,1)
             }
